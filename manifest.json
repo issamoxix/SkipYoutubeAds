@@ -1,0 +1,22 @@
+{
+    "name": "YoutubeAds",
+    "version": "0.1",
+    "description": "Skip ads on youtube",
+    "permissions": [
+        "activeTab"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "manifest_version": 2
+}
